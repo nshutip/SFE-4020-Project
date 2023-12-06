@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/main1.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body onload="openArticle(); checkAuth()">
+
+    <header>
+
+        <div id="logo">
+            <h1><span class="highlight">N</span>P</h1>
+        </div>
+
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="" class="login-link"></a></li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="headerNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="article1-main">
+
+        <h2 class="main-heading main-article-title" id="main-article-title"></h2>
+
+        <div class="main-article-container">
+            <div class="main-article-left-container">
+
+                <p class="main-article-description" id="main-article-content">
+
+                </p>
+
+                <p class="main-article-date-container">Posted by: <span id="main-article-author"></span></p>
+    
+            </div>
+
+            <div class="main-article-right-container">
+
+                <div class="main-article-image-container">
+                    <img src="img/figma.png" alt="" class="main-article-image">
+                </div>
+
+                <div class="main-article-services-container">
+
+                    <h4>Comments & Reactions</h4>
+
+                    <div class="alert info">
+                        <span class="closebtn">&times;</span>  
+                        <strong>Info!</strong> You need to <a href="clientLogin.html">log in</a> first.
+                    </div>
+
+                    <ul id="main-article-comments-container">
+                        
+                    </ul>
+
+                    <!-- <div>
+
+                        <div class="comment-container">
+                            <p class="user-name">Nshuti</p>
+                            <p class="user-comment">Insightful article!</p>
+                        </div>
+
+                        <div class="comment-container">
+                            <p class="user-name">Parfait</p>
+                            <p class="user-comment">Test Comment 1</p>
+                        </div>
+
+                        <div class="comment-container">
+                            <p class="user-name">Ruberwa</p>
+                            <p class="user-comment">Test Comment 2</p>
+                        </div>
+
+                        <div class="comment-container">
+                            <p class="user-name">Bahati</p>
+                            <p class="user-comment">Test Comment 3</p>
+                        </div>
+
+                        <div class="comment-container">
+                            <p class="user-name">Alex</p>
+                            <p class="user-comment">Test Comment 4</p>
+                        </div>
+
+                    </div> -->
+
+                    <div id="main-article-buttons-container">
+                        <button class="main-article-button" onclick="likeButton()">Like</button>
+                        <button class="main-article-button" onclick="openCommentForm()">Add comment</button>
+                    </div>
+                    
+                    <div class="wrapper" id="comment-form-container">
+
+                        <form action="article.html" id="comment-form">
+
+                            <div class="field">
+                                <label for="comment"><b>New Comment</b></label>
+                                <!-- <input type="text" name="comment" id="comment-message" placeholder="Add your comment here..." cols="15" rows="5" required> -->
+                                <textarea name="comment" id="comment-message" placeholder="Add your comment here..." cols="15" rows="5" required></textarea>
+                            </div>
+
+                        
+                            <div id="comment-form-buttons-container">
+                                <button type="submit" class="btn">Add</button>
+                                <button type="button" class="btn cancel" onclick="closeCommentForm()">Close</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="scripts/article.js"></script>
+    <script src="./scripts/index.js"></script>
+
+</body>
+</html>

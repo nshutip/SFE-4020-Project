@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        <div id="logo">
+            <h1><span class="highlight">N</span>P</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="adminDashboard.html">Back to Admin Panel</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h2>New article</h2>
+
+        <form action="./adminDashboard.html" class="container" id="new-article-form">
+
+            <label for="title">Title</label><br>
+
+            <div class="form-button-container">
+                <input type="text" name="title" id="article-title" required><br>
+            </div>
+
+            <label for="image">Image</label><br>
+
+            <div class="form-button-container">
+                <input type="file" name="image" id="article-image" accept="image/*"><br>
+            </div>
+            
+            <label for="content">Content</label><br>
+            
+            <div class="form-button-container">
+                <textarea name="content" id="article-content" required></textarea><br>
+            </div>
+
+            <div class="form-button-container" id="submit-button-container">
+                <input type="submit" value="Add new article">
+            </div>
+
+        </form>
+        
+    </main>
+
+    <script src="scripts/article.js"></script>
+</body>
+</html>

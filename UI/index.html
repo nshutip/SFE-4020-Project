@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main1.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Nshuti's </title>
+
+</head>
+
+<body id="index-body" onload="checkAuth()">
+
+    <header>
+
+        <div id="logo">
+            <!-- <h1><span class="highlight">N</span>P</h1> -->
+        </div>
+
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="portfolio.html">My work</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+                <!-- <li><a href="articles.html">Articles</a></li> -->
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="" class="login-link"></a></li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="headerNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="index-main">
+
+        <div id="welcome-message-container">
+            <div id="names-container">
+                <h1 class="name">Nshuti</h1>
+                <h2 class="name">Parfait</h2>
+            </div>
+            <div id="greetings-container">
+                <ul id="greetings-list">
+                    <li class="greeting" id="greeting1">Bienvenu<span id="greeting1-special">(e)</span></li>|
+                    <li class="greeting" id="greeting2">Murakaza Neza</li>|
+                    <li class="greeting" id="greeting3">Welcome</li>
+                </ul>
+            </div>
+            <div class="index-buttons-container">
+                <button class="home-button" onclick="location.href = 'about.html';">Get to know me</button>
+                <button class="home-button" onclick="location.href = 'articles.html';">Read my articles</button>
+                <button class="home-button" onclick="location.href = 'https://nshutip.github.io/CV/';">Read my CV</button>
+            </div>
+        </div>
+
+        <!-- <div class="animation-container" id="index-video">
+            <video autoplay muted loop>
+                <source src="img/1080p.mp4" type="video/mp4">
+            </video>
+        </div> -->
+
+    </main>
+
+    <footer class="fixed-footer">
+
+        <a href="adminLogin.html" class="external-link">
+            <p>Login as administrator</p>
+        </a>
+
+    </footer>
+
+    <script src="scripts/index.js"></script>
+
+</body>
+</html>

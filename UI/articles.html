@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/main1.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+    
+</head>
+<body onload="getArticles(); checkAuth()">
+
+    <header>
+
+        <div id="logo">
+            <h1><span class="highlight">N</span>P</h1>
+        </div>
+
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">My work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="" class="login-link"></a></li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="headerNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h2 class="main-heading">Nshuti's pen</h2>
+
+        <ul class="cards-container grid-container" id="article-cards-container">
+
+            <li class="card article-card grid-item" onclick="openArticle(article)">
+
+                <div class="card-details-container">
+
+                    <h3 class="card-title">UI/UX design using Figma</h3>
+
+                    <p class="card-description">
+                        But I must explain to you how all this mistaken 
+                        idea of denouncing pleasure and praising pain was 
+                        born and I will give you a complete account of the 
+                        system, and .
+                    </p>
+
+                </div>
+
+                <div class="card-image-container">
+
+                    <img src="img/figma.png" alt="" class="card-image">
+
+                </div>
+
+                <a href="article.html" class="card-link external-link">
+                    <p>
+                        Read more
+                        <svg id="right">
+                            <path d="M0.5 9.35772H20.9956L14.2001 2.29941L16.4134 0L27 11L16.4134 22L14.2001 19.7006L20.9956 12.6423H0.5V9.35772Z" ></path>
+                        </svg>
+                    </p>
+                </a>
+
+            </li>
+
+            <li class="card article-card grid-item" onclick="location.href = 'article.html'">
+
+                <div class="card-details-container">
+
+                    <h3 class="card-title">Front-End web development using HTML5 and CSS3</h3>
+
+                    <p class="card-description">
+                        Nor again is there anyone who loves or pursues or desires 
+                        to obtain pain of itself, because it is pain, but because 
+                        occasionally circumstances occur in which toil and pain can.
+                    </p>
+
+                </div>
+
+                <div class="card-image-container">
+
+                    <img src="img/html 5 and css3.png" alt="" class="card-image">
+
+                </div>
+
+                <a href="article.html" class="card-link external-link">
+                    <p>
+                        Read more
+                        <svg id="right">
+                            <path d="M0.5 9.35772H20.9956L14.2001 2.29941L16.4134 0L27 11L16.4134 22L14.2001 19.7006L20.9956 12.6423H0.5V9.35772Z" ></path>
+                        </svg>
+                    </p>
+                </a>
+
+            </li>
+
+            <li class="card article-card grid-item" onclick="location.href = 'article.html'">
+
+                <div class="card-details-container">
+
+                    <h3 class="card-title">
+                        Version Control and Team Collaboration using Git
+                        and Git technologies
+                    </h3>
+
+                    <p class="card-description">
+                        But who has any right to find fault with a man who chooses to 
+                        enjoy a pleasure that has no annoying consequences.
+                    </p>
+
+                </div>
+
+                <div class="card-image-container">
+
+                    <img src="img/git-github.png" alt="" class="card-image">
+
+                </div>
+
+                <a href="article.html" class="card-link external-link">
+                    <p>
+                        Read more
+                        <svg id="right">
+                            <path d="M0.5 9.35772H20.9956L14.2001 2.29941L16.4134 0L27 11L16.4134 22L14.2001 19.7006L20.9956 12.6423H0.5V9.35772Z" ></path>
+                        </svg>
+                    </p>
+                </a>
+
+            </li>
+
+            <li class="card article-card grid-item" onclick="location.href = 'article.html'">
+
+                <div class="card-details-container">
+
+                    <h3 class="card-title">Project management simplified using Trello</h3>
+
+                    <p class="card-description">
+                        one who avoids a pain that produces no resultant pleasure?" because 
+                        it is pleasure, but because those who do not know how to pursue pleasure 
+                        rationally encounter 
+                    </p>
+
+                </div>
+
+                <div class="card-image-container">
+
+                    <img src="img/trello.webp" alt="" class="card-image">
+
+                </div>
+
+                <a href="article.html" class="card-link external-link">
+                    <p>
+                        Read more
+                        <svg id="right">
+                            <path d="M0.5 9.35772H20.9956L14.2001 2.29941L16.4134 0L27 11L16.4134 22L14.2001 19.7006L20.9956 12.6423H0.5V9.35772Z" ></path>
+                        </svg>
+                    </p>
+                </a>
+
+            </li>
+
+        </ul>
+
+    </main>
+
+    <script src="scripts/article.js"></script>
+    <script src="scripts/index.js"></script>
+
+</body>
+</html>

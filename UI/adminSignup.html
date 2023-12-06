@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        <div id="logo">
+            <h1><span class="highlight">N</span>P</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Go back to Home</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <form action="./adminLogin.html" id="registration-form">
+            <div class="wrapper">
+
+                <h4>Sign up for a new account here</h4>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+
+                <div class="field name">
+                    <label for="fname"><b>First name</b></label>
+                    <input type="text" placeholder="Enter your first name" name="fname" id="first-name" required>
+                </div>
+
+                <div class="field name">
+                    <label for="lname"><b>Last name</b></label>
+                    <input type="text" placeholder="Enter your last name" name="lname" id="last-name" required>
+                </div>
+        
+                <div class="field email">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter your email address" name="email" id="new-email" required>
+                </div>
+        
+                <div class="field password">
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="new-password" required>
+                </div>
+                
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        
+                <div class="sign-up-buttons-container">
+                    <input type="button" value="Cancel" class="sign-up-button">
+                    <input type="submit" value="Sign Up" class="sign-up-button">
+                </div>
+        </form>
+    </main>
+
+    <script src="scripts/admin.js"></script>
+
+</body>
+</html>

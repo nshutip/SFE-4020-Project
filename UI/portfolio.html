@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main1.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+
+</head>
+<body onload="checkAuth()">
+
+    <header>
+
+        <div id="logo">
+            <h1><span class="highlight">N</span>P</h1>
+        </div>
+
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="" class="login-link"></a></li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="headerNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h2 class="main-heading" id="portfolio-main-heading">
+            From simple web applications to slightly complex python cryptographic 
+            programs, Nshuti Parfait has built and worked on various software 
+            engineering projects. Including: 
+        </h2>
+
+        <ul class="cards-container grid-container" id="project-cards-container">
+
+            <li class="card article-card grid-item" onclick="location.href = 'https://github.com/nshutip/GenGuess'">
+
+                <div class="card-details-container">
+
+                    <h3 class="card-title">
+                        GenGuess
+                    </h3>
+
+                    <p class="card-description">
+                        GenGuess is a web application that allows a user to enter 
+                        their date of birth and the application responds with the 
+                        generation name for that user.
+                    </p>
+
+                </div>
+
+                <div class="card-image-container">
+
+                    <img src="img/code.jpeg" alt="" class="card-image project-card-image">
+
+                </div>
+
+                <a href="https://github.com/nshutip/GenGuess" class="card-link external-link">
+                    <p>
+                        Open repository
+                        <svg id="right">
+                            <path d="M0.5 9.35772H20.9956L14.2001 2.29941L16.4134 0L27 11L16.4134 22L14.2001 19.7006L20.9956 12.6423H0.5V9.35772Z" ></path>
+                        </svg>
+                    </p>
+                </a>
+
+            </li>
+
+            <li class="card article-card grid-item" onclick="location.href = 'https://github.com/nshutip/address-book'">
+
+                <div class="card-details-container">
+
+                    <h3 class="card-title">
+                        Address book
+                    </h3>
+
+                    <p class="card-description">
+                        Address book is a small web application that displays a given 
+                        list of contacts and permits the addition and deletion of 
+                        contacts by the user.
+                    </p>
+
+                </div>
+
+                <div class="card-image-container">
+
+                    <img src="img/code.jpeg" alt="" class="card-image project-card-image">
+
+                </div>
+
+                <a href="https://github.com/nshutip/address-book" class="card-link external-link">
+                    <p>
+                        Open repository
+                        <svg id="right">
+                            <path d="M0.5 9.35772H20.9956L14.2001 2.29941L16.4134 0L27 11L16.4134 22L14.2001 19.7006L20.9956 12.6423H0.5V9.35772Z" ></path>
+                        </svg>
+                    </p>
+                </a>
+
+            </li>
+
+            <li class="card article-card grid-item" onclick="location.href = 'https://github.com/nshutip/GenGuess'">
+
+                <div class="card-details-container">
+
+                    <h3 class="card-title">
+                        File name updating program
+                    </h3>
+
+                    <p class="card-description">
+                        This is a small python program that helps someone to update 
+                        or correct names of files in a directory.
+                    </p>
+
+                </div>
+
+                <div class="card-image-container">
+
+                    <img src="img/code.jpeg" alt="" class="card-image project-card-image">
+
+                </div>
+
+                <a href="https://github.com/nshutip/GenGuess" class="card-link external-link">
+                    <p>
+                        Open repository
+                        <svg id="right">
+                            <path d="M0.5 9.35772H20.9956L14.2001 2.29941L16.4134 0L27 11L16.4134 22L14.2001 19.7006L20.9956 12.6423H0.5V9.35772Z" ></path>
+                        </svg>
+                    </p>
+                </a>
+
+            </li>
+
+            <li class="card article-card grid-item" onclick="location.href = 'https://github.com/nshutip/CV'">
+
+                <div class="card-details-container">
+
+                    <h3 class="card-title">
+                        Nshuti's CV webpage
+                    </h3>
+
+                    <p class="card-description">
+                        Nshuti Parfait's Curriculum Vitae
+                    </p>
+
+                </div>
+
+                <div class="card-image-container">
+
+                    <img src="img/code.jpeg" alt="" class="card-image project-card-image">
+
+                </div>
+
+                <a href="https://github.com/nshutip/CV" class="card-link external-link">
+                    <p>
+                        Open repository
+                        <svg id="right">
+                            <path d="M0.5 9.35772H20.9956L14.2001 2.29941L16.4134 0L27 11L16.4134 22L14.2001 19.7006L20.9956 12.6423H0.5V9.35772Z" ></path>
+                        </svg>
+                    </p>
+                </a>
+
+            </li>
+
+        </ul>
+
+    </main>
+
+    <footer class="fixed-footer">
+        <p>
+            <a href="https://github.com/nshutip?tab=repositories" class="external-link">
+                See more ...
+            </a>
+        </p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+
+</body>
+</html>
